@@ -29,11 +29,11 @@ def update_products(*args):
         else:
             tkinter.messagebox.showerror(title="Error", message='Invalid input')
     elif args[2]:
-        updated_product = args[2].split() # args[2] here is the listbox selection to be modified as admin
+        updated_product = args[2].split(',')  # args[2] here is the listbox selection to be modified as admin
 
-        if args[0] == 'price': # arg[0] is the 'price' or the 'quantity' in admin frame
+        if args[0] == 'price':  # arg[0] is the 'price' or the 'quantity' in admin frame
             try:
-                updated_product[2] = float(args[1]) # arg[1] is the value from the entry to be used
+                updated_product[2] = float(args[1])  # arg[1] is the value from the entry to be used
             except ValueError:
                 tkinter.messagebox.showerror(title="Error", message='Invalid input')
 
@@ -42,7 +42,7 @@ def update_products(*args):
                 updated_product[1] = float(args[1])
             except ValueError:
                 tkinter.messagebox.showerror(title="Error", message='Invalid input')
-        elif args[0] == 'Buy': # arg[0] is 'Buy' is the customer frame
+        elif args[0] == 'Buy':  # arg[0] is 'Buy' is the customer frame
             try:
                 updated_product[1] = float(updated_product[1])
                 if updated_product[1] >= float(args[1]):

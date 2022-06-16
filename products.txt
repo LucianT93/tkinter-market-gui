@@ -1,5 +1,5 @@
-Rosii, 50.0, 3.0
-Castraveti, 60.0, 5.0
+Rosii, 86.0,  3.0
+Castraveti, 30.0,  5.0
 Ardei, 45.0, 6.0
 Ceapa, 25.0, 5.0
 Morcov, 100.0, 6.0
@@ -9,3 +9,4 @@ Pastarnac, 100, 6
 Conopida, 10.0, 4
 Brocoli, 200, 8
 Sparanghel, 20.0, 9.0
+spanac, 6.0, 8.0
